@@ -1,0 +1,5 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>Assignment 2 Complete</message>\n<message>Composite Pattern Implemented</message>\n<message>Dont know</message>\n<message>Added ScheduleFlightBuilder</message>\n<message>Strategy pattern complete.</message>\n<message>Strategy impl 1, unit test passed\!\!\!</message>\n<message>Delete this commit</message>\n<message>Deleted useless methods FlightOrder - isOrderValid, processOrderWithCC..</message>\n<message>I dont know</message>\n<message>Schedule tests still fails</message>\n</messages>
+eclipse.preferences.version=1
+repositories_view_filters=<?xml version\="1.0" encoding\="UTF-8"?>\n<FilterCache/>
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300
