@@ -1,0 +1,54 @@
+package observable;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import observer.StockObserver;
+
+public class IphoneStockObservable implements StockObservable
+{
+	private String itemName;
+	private int stock;
+
+	public IphoneStockObservable(String itemName)
+	{
+		this.itemName = itemName;
+	}
+
+	private List<StockObserver> observers = new ArrayList<>();
+
+	@Override
+	public void notifyObservers()
+	{
+		for (StockObserver o : observers)
+			o.update();
+	}
+
+	public void addObserver(StockObserver o)
+	{
+		observers.add(o);
+	}
+
+	public void removeObserver(StockObserver o)
+	{
+		observers.remove(o);
+	}
+	
+	@Override
+	public String getStockName()
+	{
+		return this.itemName;
+	}
+
+	public int getStock()
+	{
+		return this.stock;
+	}
+
+	public void setStock(int stock)
+	{
+		this.stock = stock;
+		if (stock == 0)
+			notifyObservers();
+	}
+}

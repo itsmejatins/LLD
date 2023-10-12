@@ -1,0 +1,16 @@
+package application;
+
+import observable.IphoneStockObservable;
+import observable.StockObservable;
+import observer.EmailAltert;
+
+public class NotificationService
+{
+	public static void main(String[] args)
+	{
+		StockObservable iphoneStockObservable = new IphoneStockObservable("iPhone");
+		iphoneStockObservable.addObserver(new EmailAltert(iphoneStockObservable, "e1@mail.com"));
+		iphoneStockObservable.addObserver(new EmailAltert(iphoneStockObservable, "e2@mail.com"));
+		iphoneStockObservable.addObserver(new EmailAltert(iphoneStockObservable, "e3@mail.com"));
+	}
+}

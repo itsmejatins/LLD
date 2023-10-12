@@ -1,0 +1,11 @@
+package observable;
+
+public interface StockObservable
+{
+	public void notifyObservers();
+	public String getStockName();
+	public void addObserver();
+	public void removeObserver();
+	public int getStockCount();
+	public void setStockCount();
+}

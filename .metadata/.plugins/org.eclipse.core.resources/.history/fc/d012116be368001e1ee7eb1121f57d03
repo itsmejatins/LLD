@@ -1,0 +1,14 @@
+package observer;
+
+public class EmailAltert implements StockObserver
+
+{
+
+	@Override
+	public void update()
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+}

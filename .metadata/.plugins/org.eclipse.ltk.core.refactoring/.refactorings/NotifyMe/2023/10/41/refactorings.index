@@ -1,2 +1,7 @@
 1697097342501	Delete element
 1697097564151	Delete element
+1697103110316	Rename type 'Observer'
+1697104710147	Rename field 'stock'
+1697104846623	Copy compilation unit
+1697104873070	Rename field 'email'
+1697104898277	Rename method 'sendEmail'

@@ -1,0 +1,6 @@
+package observable;
+
+public interface StockObservable
+{
+	public void notifyObservers();
+}
