@@ -1,0 +1,7 @@
+To provide default implementations for a method, should be we abstract classes or default methods of interfaces?
+
+https://medium.com/thefreshwrites/interface-with-default-methods-vs-abstract-class-in-java-d08150e7b108#:~:text=Whenever%20feasible%2C%20it%20is%20advisable,and%20implement%20an%20interface%20concurrently
+
+Some conclusions - 
+1 - I can make a constructor in the abstract class to provide the color of the Circle object. This forces all the implementing classes to first set their state.
+2- In case of default method of an interface, I cannot force the implementing classes to first set their state via constructor. This means that I explicitly need to set the state of the implementing classes before using the default method.
