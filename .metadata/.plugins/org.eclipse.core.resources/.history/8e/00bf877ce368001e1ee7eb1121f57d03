@@ -1,6 +1,0 @@
-package observable;
-
-public interface StockObservable
-{
-
-}
